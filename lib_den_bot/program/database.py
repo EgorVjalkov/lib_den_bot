@@ -58,8 +58,9 @@ if __name__ == '__main__':
     #print(ved_frame)
     df = DataBase(xls_name)
     frame = df.get_table(with_dates=False).set_index('bgame')
-    frame = frame.sort_index()
-    df.update_table(frame, 'bgame')
+    print(frame)
+    #frame = frame.sort_index()
+    #df.update_table(frame, 'bgame')
 
     # for price upload:
     #price_frame = pd.read_excel(f'{price}.xlsx', index_col=0, dtype=str)
